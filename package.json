@@ -1,0 +1,8 @@
+{
+    "name": "TOP_10_Lista_Musical",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "aisca",
+    "contributors": [],
+    "dependencies": {}
+}

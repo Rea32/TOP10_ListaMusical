@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+	<meta charset="utf-8">
+	<title>Lista Músical</title>
+	<style>
+		table.default,td{
+   			border: 1px solid black;
+		}
+		
+		table.default, th{
+			background-color: rgba(17,159,204,.25);
+		}
+                
+                
+                
+	</style>
+</head>
+<body>
+	<table align="center" class="default">
+            <caption>Top 10. Las mejores canciones del momento</caption>
+            <thead>
+                    
+			<tr>
+				<th colspan="4">Top 10. Las mejores canciones del momento</th>
+			</tr>
+			<tr>
+				<th>Puesto</th>
+				<th>Grupo</th>
+				<th>Cancion</th>
+				<th>Votos</th>
+
+			</tr>
+            </thead>
+
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td rowspan="2">Journey</td>
+				<td>Any Way You Want</td>
+				<td>250</td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td>Don't stop Believin'</td>
+				<td>198</td>
+				
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td>The Police</td>
+				<td>Roxanne</td>
+				<td>150</td>
+			</tr>
+
+			<tr>
+				<td>4</td>
+				<td rowspan="2">Phil Collins</td>
+				<td>You Can't Hurry Love</td>
+				<td>138</td>
+			</tr>
+
+			<tr>
+				<td>5</td>
+				<td>In The Air Tonight</td>
+				<td>132</td>
+			</tr>
+
+			<tr>
+				<td>6</td>
+				<td>Bruce Hornsby</td>
+				<td>The Way It Is</td>
+				<td>124</td>
+			</tr>
+
+			<tr>
+				<td>7</td>
+				<td>Asia</td>
+				<td>Heat Of The Moment</td>
+				<td>118</td>
+			</tr>
+
+			<tr>
+				<td>8</td>
+				<td>TOTO</td>
+				<td>Africa</td>
+				<td>115</td>
+			</tr>
+
+			<tr>
+				<td>9</td>
+				<td>Boston</td>
+				<td>More Than A Feeling</td>
+				<td>102</td>
+			</tr>
+
+			<tr>
+				<td>10</td>
+				<td>Lynyrd Skynyrd</td>
+				<td>Sweet Home Alabama</td>
+				<td>93</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="3">Total de Votos</td>
+				<td>1420</td>
+			</tr>
+				
+		</tbody>
+	</table>
+
+	<br>
+
+	<form action="pagina/servicio" method="GET">
+		<fieldset>
+			<legend><strong>Datos del votante</strong></legend>
+
+                                <p><label>Nombre &nbsp;&nbsp;<input type="text" name="nombre"></label></p>
+				<p><label>Apellidos <input type="text" name="apellidos"></label></p>
+				<p><label>Mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="mail"></label></p>
+				<p><label>Edad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" min="18" max="100" name="edad"></label></p>
+				<p><label>Teléfono <input type="tel" name="telefono" minlength="9" maxlength="9"></label></p>
+				<p><label>Foto reciente <input type="file" name="foto"><input type="submit" value="Enviar"></label></p>
+		</fieldset>
+
+		<fieldset>
+			<legend><strong>Datos de la canción</strong></legend>
+
+				<p><label>Nombre Grupo &nbsp;&nbsp;<input type="text" name="grupo"></label></p>
+				<p><label>Nombre Canción <input type="text" name="canción"></label></p>
+				<p><label>Album &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="album"></label></p>
+				<p><label>Fecha de publicación <input type="date" name="fecha"></label></p>
+				<p>Estilo de música:</p>
+                                <section>    
+                                    <input type="checkbox" value="pop">Pop &nbsp;&nbsp; &nbsp;
+                                    <input type="checkbox" value="español">Español &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+                                    <input type="checkbox" value="flamenco">Flamenco&nbsp;
+                                    <input type="checkbox" value="rock">Rock<br>
+                                        </section>
+					
+					<input type="checkbox" value="metal">Metal &nbsp;
+                                        <input type="checkbox" value="reggaeton">Reggaeton &nbsp;
+					<input type="checkbox" value="hiphop">Hip Hop &nbsp;&nbsp;
+					<input type="checkbox" value="otros">Otros &nbsp;
+                                        <br>
+                                        
+                                        <p>¿Por que has elegido está cancion?</p>
+                                        <textarea maxlength="220" cols="40" rows="7" name="mensaje">Escribe aqui,</textarea>
+                                
+                                
+                                
+		</fieldset>
+
+
+
+	</form>
+
+</body>
+</html>
